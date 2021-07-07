@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFRegistracijaVozila5.Forme.frmRegistracija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRegistracijaVozila5.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni registraciju" Height="400" Width="300">
+    <Grid>
+        <Label Content="Broj tablice:" HorizontalAlignment="Left" Margin="38,52,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena:" HorizontalAlignment="Left" Margin="38,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum:" HorizontalAlignment="Left" Margin="38,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Posebna tablica" HorizontalAlignment="Left" Margin="38,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vozilo:" HorizontalAlignment="Left" Margin="38,172,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtBrojTablice" HorizontalAlignment="Left" Height="23" Margin="130,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtCena" HorizontalAlignment="Left" Height="23" Margin="130,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Name="dpDatum" HorizontalAlignment="Left" Margin="130,114,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbPosebnaTablica" Content="" HorizontalAlignment="Left" Margin="163,152,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbxVozilo" HorizontalAlignment="Left" Margin="130,175,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="BrojSasije" SelectedValuePath="VoziloID" />
+        
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="188,321,0,0" VerticalAlignment="Top" Width="75" Click="BtnSacuvaj_Click"/>
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="38,321,0,0" VerticalAlignment="Top" Width="75" Click="BtnOtkazi_Click"/>
+
+    </Grid>
+</Window>

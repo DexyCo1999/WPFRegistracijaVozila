@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPFRegistracijaVozila5.Forme.frmVozilo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRegistracijaVozila5.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni vozilo" Height="400" Width="300">
+    <Grid>
+        <Label Content="Broj šasije" HorizontalAlignment="Left" Margin="51,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kubikaža" HorizontalAlignment="Left" Margin="51,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="Konjska snaga" HorizontalAlignment="Left" Margin="51,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Boja" HorizontalAlignment="Left" Margin="51,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vlasnik:" HorizontalAlignment="Left" Margin="51,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tip:" HorizontalAlignment="Left" Margin="51,205,0,0" VerticalAlignment="Top"/>
+        <Label Content="Marka" HorizontalAlignment="Left" Margin="51,235,0,0" VerticalAlignment="Top"/>
+        <Label Content="Model:" HorizontalAlignment="Left" Margin="51,265,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtBrojSasije" HorizontalAlignment="Left" Height="23" Margin="150,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtKubikaze" HorizontalAlignment="Left" Height="23" Margin="150,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtKonjskaSnaga" HorizontalAlignment="Left" Height="23" Margin="150,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtBoja" HorizontalAlignment="Left" Height="23" Margin="150,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cbxVlasnik" HorizontalAlignment="Left" Margin="150,178,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cbxTip" HorizontalAlignment="Left" Margin="150,208,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cbxMarka" HorizontalAlignment="Left" Margin="150,238,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cbxModel" HorizontalAlignment="Left" Margin="150,267,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="186,331,0,0" VerticalAlignment="Top" Width="75" Click="BtnSacuvaj_Click"/>
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="38,331,0,0" VerticalAlignment="Top" Width="75" Click="BtnOtkazi_Click"/>
+
+    </Grid>
+</Window>
